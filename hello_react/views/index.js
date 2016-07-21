@@ -1,33 +1,29 @@
 /**
  * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * https://github.com/hanks-zyh
  */
-'use strict';  
-import React ,{Component}from 'react';
-import {
-    AppRegistry,
+
+'use strict';
+
+var React = require('react-native');
+
+var {
+  AppRegistry,
   StyleSheet,
   View,
   Text,
   TouchableOpacity,
   Navigator,
-} from 'react-native';
-
-/** 
- * Sample React Native App 
- * https://github.com/facebook/react-native 
- */  
+} =  React;
 
 var _navigator;
+var HttpView = require('./http.js');
+var ShopView = require('./shop.android.js');
+var ViewPager = require('./viewpager.android.js');
+var UserInfoView = require('./userinfo.js');
+var NewsView = require('./news.js');
 
-// import HttpView from './views/http.js';
-// import ShopView from './views/shop.android.js';
-// import ViewPager from './views/viewpager.android.js';
-// import UserInfoView from './views/userinfo.js';
-// import NewsView from './views/news.js';
-
-var hello_react = React.createClass({
+var AwesomeProject = React.createClass({
 
   getInitialState: function(){
     return {};
@@ -62,32 +58,32 @@ var hello_react = React.createClass({
        );
     }
 
-    // if(route.id === 'http'){
-    //   return (
-    //     <HttpView navigator={navigator} route={route} />
-    //    );
-    // }
+    if(route.id === 'http'){
+      return (
+        <HttpView navigator={navigator} route={route} />
+       );
+    }
 
-    // if(route.id === 'shop'){
-    //   return (
-    //     <ShopView navigator={navigator} route={route}/>
-    //   );
-    // }
-    // if(route.id === 'viewpager'){
-    //   return (
-    //     <ViewPager navigator={navigator} route={route}/>
-    //   );
-    // }
-    // if(route.id === 'userinfo'){
-    //   return (
-    //     <UserInfoView navigator={navigator} route={route}/>
-    //   );
-    // }
-    // if(route.id === 'news'){
-    //   return (
-    //     <NewsView navigator={navigator} route={route}/>
-    //   );
-    // }
+    if(route.id === 'shop'){
+      return (
+        <ShopView navigator={navigator} route={route}/>
+      );
+    }
+    if(route.id === 'viewpager'){
+      return (
+        <ViewPager navigator={navigator} route={route}/>
+      );
+    }
+    if(route.id === 'userinfo'){
+      return (
+        <UserInfoView navigator={navigator} route={route}/>
+      );
+    }
+    if(route.id === 'news'){
+      return (
+        <NewsView navigator={navigator} route={route}/>
+      );
+    }
 
 
   },
@@ -115,5 +111,4 @@ var styles = StyleSheet.create({
   },
 });
 
-
-AppRegistry.registerComponent('hello_react', () => hello_react);
+module.exports = AwesomeProject
