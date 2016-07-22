@@ -19,27 +19,25 @@ import {
  * https://github.com/facebook/react-native 
  */  
 
-var _navigator;
+ var _navigator;
 
-// import HttpView from './views/http.js';
+import HttpView from './views/http.js';
 // import ShopView from './views/shop.android.js';
 // import ViewPager from './views/viewpager.android.js';
 // import UserInfoView from './views/userinfo.js';
 // import NewsView from './views/news.js';
 
-var hello_react = React.createClass({
+class hello_react extends Component{
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  configureScenceAndroid(){
+     return Navigator.SceneConfigs.FadeAndroid;
+  }
 
-  getInitialState: function(){
-    return {};
-  },
-
-  configureScenceAndroid: function(){
-    return Navigator.SceneConfigs.FadeAndroid;
-  },
-
-
-  renderSceneAndroid: function(route, navigator){
-    _navigator = navigator;
+  renderSceneAndroid(route, navigator){
+      _navigator = navigator;
     if(route.id === 'main'){
       return (
         <View>
@@ -62,11 +60,11 @@ var hello_react = React.createClass({
        );
     }
 
-    // if(route.id === 'http'){
-    //   return (
-    //     <HttpView navigator={navigator} route={route} />
-    //    );
-    // }
+    if(route.id === 'http'){
+      return (
+        <HttpView navigator={navigator} route={route} />
+       );
+    }
 
     // if(route.id === 'shop'){
     //   return (
@@ -89,9 +87,9 @@ var hello_react = React.createClass({
     //   );
     // }
 
+  }
 
-  },
-  render: function(){
+  render(){
     var renderScene = this.renderSceneAndroid;
     var configureScence = this.configureScenceAndroid;
     return (
@@ -103,7 +101,7 @@ var hello_react = React.createClass({
       />
     );
   }
-});
+}
 
 var styles = StyleSheet.create({
   button:{

@@ -2,10 +2,13 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
+
+
 'use strict';
 
-var React = require('react-native');
-var {
+import React ,{Component}from 'react';
+
+import {
   AppRegistry,
   StyleSheet,
   Text,
@@ -17,7 +20,8 @@ var {
   ListView,
   TouchableOpacity,
   BackAndroid,
-} = React;
+} from 'react-native';
+
 
 BackAndroid.addEventListener('hardwareBackPress', function() {
   if(_navigator == null){
