@@ -22,7 +22,7 @@ import {
  var _navigator;
 
 import HttpView from './views/http.js';
-// import ShopView from './views/shop.android.js';
+import ShopView from './views/shop.android.js';
 // import ViewPager from './views/viewpager.android.js';
 // import UserInfoView from './views/userinfo.js';
 // import NewsView from './views/news.js';
@@ -66,11 +66,11 @@ class hello_react extends Component{
        );
     }
 
-    // if(route.id === 'shop'){
-    //   return (
-    //     <ShopView navigator={navigator} route={route}/>
-    //   );
-    // }
+    if(route.id === 'shop'){
+      return (
+        <ShopView navigator={navigator} route={route}/>
+      );
+    }
     // if(route.id === 'viewpager'){
     //   return (
     //     <ViewPager navigator={navigator} route={route}/>
