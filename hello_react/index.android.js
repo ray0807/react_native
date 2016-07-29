@@ -23,9 +23,9 @@ var _navigator;
 
 import HttpView from './views/http/http.js';
 import ShopView from './views/shop/shop.js';
-// import ViewPager from './views/viewpager.android.js';
-// import UserInfoView from './views/userinfo.js';
-// import NewsView from './views/news.js';
+import ViewPager from './views/viewpager.android.js';
+import UserInfoView from './views/user/userinfo.js';
+import NewsView from './views/news/news.js';
 
 class hello_react extends Component {
     constructor(props) {
@@ -77,21 +77,21 @@ class hello_react extends Component {
                 <ShopView navigator={navigator} route={route}/>
             );
         }
-        // if(route.id === 'viewpager'){
-        //   return (
-        //     <ViewPager navigator={navigator} route={route}/>
-        //   );
-        // }
-        // if(route.id === 'userinfo'){
-        //   return (
-        //     <UserInfoView navigator={navigator} route={route}/>
-        //   );
-        // }
-        // if(route.id === 'news'){
-        //   return (
-        //     <NewsView navigator={navigator} route={route}/>
-        //   );
-        // }
+        if(route.id === 'viewpager'){
+          return (
+            <ViewPager navigator={navigator} route={route}/>
+          );
+        }
+        if(route.id === 'userinfo'){
+          return (
+            <UserInfoView navigator={navigator} route={route}/>
+          );
+        }
+        if(route.id === 'news'){
+          return (
+            <NewsView navigator={navigator} route={route}/>
+          );
+        }
 
     }
 
