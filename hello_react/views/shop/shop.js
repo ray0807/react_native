@@ -1,13 +1,8 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * Created by wanglei on 2016/7/29.
  */
 
-
-'use strict';
-
-import React, {Component}from 'react';
-
+import  React, {Component} from 'react';
 import {
     AppRegistry,
     StyleSheet,
@@ -22,33 +17,26 @@ import {
     BackAndroid,
 } from 'react-native';
 
-
-BackAndroid.addEventListener('hardwareBackPress', function () {
-    if (_navigator == null) {
-        return false;
+import BaseView from '../base/BaseView';
+var drawer;
+export default class ShopView extends BaseView {
+    constructor(props) {
+        super(props);
+        const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+        this.state = {
+            dataSource: ds.cloneWithRows([
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie', 'Devin'
+            ])
+        };
     }
-    if (_navigator.getCurrentRoutes().length === 1) {
-        return false;
+
+
+    openDrawer() {
+        drawer.openDrawer();
     }
-    _navigator.pop();
-    return true;
-});
 
-var _navigator;
+    render() {
 
-var ShopView = React.createClass({
-    openDrawer: function () {
-        this.drawer.openDrawer();
-    },
-    getInitialState: function () {
-        _navigator = this.props.navigator;
-        var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-        return {
-            dataSource: ds.cloneWithRows(['CLOTHES', 'PACKAGES', 'SHOES',]),
-        }
-    },
-
-    render: function () {
         var navigationView = (
             <View style={{flex: 1, backgroundColor: '#fff'}}>
                 <Image
@@ -63,21 +51,22 @@ var ShopView = React.createClass({
                             alignItems: 'center',
                             paddingLeft: 20,
                         }}>
-                            <Image source={ require('../img/list4.png') } style={{height: 10, width: 10, margin: 8}}/>
+                            <Image source={ require('../../img/list4.png') }
+                                   style={{height: 10, width: 10, margin: 8}}/>
                             <Text style={ styles.listItem }>{rowData} row: {rowID}  </Text>
                         </View>
                     }
                 />
             </View>
+
+
         );
-
-
         return (
             <DrawerLayoutAndroid
                 drawerWidth={300}
                 drawerPosition={DrawerLayoutAndroid.positions.Left}
                 ref={(drawer) => {
-                    this.drawer = drawer;
+                    drawer = drawer;
                 }}
                 renderNavigationView={() => navigationView}
             >
@@ -93,10 +82,10 @@ var ShopView = React.createClass({
                             paddingRight: 20,
                         }}>
                             <TouchableOpacity onPress={this.openDrawer}>
-                                <Image source={require('../img/list4.png')} style={{width: 20, height: 20}}/>
+                                <Image source={require('../../img/list4.png')} style={{width: 20, height: 20}}/>
                             </TouchableOpacity>
                             <Text style={{fontSize: 18, color: '#484848'}}>SHOP</Text>
-                            <Image source={require('../img/search.png')} style={{width: 20, height: 20}}/>
+                            <Image source={require('../../img/search.png')} style={{width: 20, height: 20}}/>
                         </View>
                         <Image
                             source={{uri: 'http://img.hb.aicdn.com/cbf3ebcae08ef62ef02dd61aa2407414dc64e794150313-KRUD1s_fw658'}}
@@ -178,10 +167,9 @@ var ShopView = React.createClass({
                     </View>
                 </ScrollView>
             </DrawerLayoutAndroid>
-
         );
     }
-});
+}
 
 var styles = StyleSheet.create({
     contentContainer: {backgroundColor: 'white'},
@@ -209,5 +197,3 @@ var styles = StyleSheet.create({
     },
 
 });
-
-module.exports = ShopView;

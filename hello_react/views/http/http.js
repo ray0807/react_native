@@ -18,9 +18,9 @@ import {
     BackAndroid,
 } from 'react-native';
 
-import BaseView from './BaseView'
+import BaseView from '../base/BaseView'
 
-class HttpView extends BaseView {
+export  default  class HttpView extends BaseView {
     constructor(props) {
         super(props);
         this.state = {};
@@ -109,4 +109,3 @@ var styles = StyleSheet.create({
 });
 
 
-module.exports = HttpView;

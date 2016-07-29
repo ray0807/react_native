@@ -17,11 +17,11 @@ var {
 } =  React;
 
 var _navigator;
-var HttpView = require('./http.js');
-var ShopView = require('./shop.android.js');
+var HttpView = require('./http/http.js');
+var ShopView = require('./shop/shop.android.js');
 var ViewPager = require('./viewpager.android.js');
-var UserInfoView = require('./userinfo.js');
-var NewsView = require('./news.js');
+var UserInfoView = require('./user/userinfo.js');
+var NewsView = require('./news/news.js');
 
 var AwesomeProject = React.createClass({
 
