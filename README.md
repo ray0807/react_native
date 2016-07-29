@@ -6,6 +6,15 @@
 - 动态更新
 - ...
 
+
+## 2016-07-30
+  1.开发工具最终方案（windows版，mac请忽略此项）
+  
+  *  WebStrom+sublime ，此方式的好处webstrom和androidstudio太像了，支持CTRL+右键查看文件等等功能，所以方便习惯，但是有时候需要重写一些方法，webstrom就有点鸡肋了，这个时候sublime就比较好了比如在class中打一个cons，就可以把constructer（）代码补全，很是方便。
+  
+  2.代码重构
+  
+  *  习惯了面向对象，既然ES6也有这方面的支持（class extend XXXX）所以试着把所有的代码都以ES6的方式实现，然后提取出公共部分继承，但是我还没找到在哪里做接口的实现方式，是不是我想多了呢···再研究研究吧...
 ## 2016-07-22
   1.开发工具是在是太坑，我是做android 的，用Android Studio用的实在是太爽了，现在写RN，就连代码格式化都很蛋疼（可能我的sublime text3插件装得不够多）。
   
