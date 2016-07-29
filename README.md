@@ -7,8 +7,8 @@
 - ...
 
 
-## 2016-07-30
-  1.开发工具最终方案（windows版，mac请忽略此项）
+ ## 2016-07-30
+   1.开发工具最终方案（windows版，mac请忽略此项）
   
   *  WebStrom+sublime ，此方式的好处webstrom和androidstudio太像了，支持CTRL+右键查看文件等等功能，所以方便习惯，但是有时候需要重写一些方法，webstrom就有点鸡肋了，这个时候sublime就比较好了比如在class中打一个cons，就可以把constructer（）代码补全，很是方便。
   
