@@ -12,6 +12,7 @@ import {
     Text,
     TouchableOpacity,
     Navigator,
+    ToastAndroid,
 } from 'react-native';
 
 /**
@@ -26,12 +27,14 @@ import ShopView from './views/shop/shop.js';
 import ViewPager from './views/viewpager.android.js';
 import UserInfoView from './views/user/userinfo.js';
 import NewsView from './views/news/news.js';
+import  CountModule from './views/CountModule';
 
 class hello_react extends Component {
     constructor(props) {
         super(props);
         this.state = {};
     }
+
 
     configureScenceAndroid() {
         return Navigator.SceneConfigs.FadeAndroid;
@@ -62,6 +65,14 @@ class hello_react extends Component {
                                       style={ styles.button }>
                         <Text>News</Text>
                     </TouchableOpacity>
+                    <TouchableOpacity onPress={()=> {
+                        console.warn("count");
+                        CountModule.count("ray ", CountModule.TEST_COUNT_KEY);
+                        console.warn("CountModule");
+                    }}
+                                      style={ styles.button }>
+                        <Text>modules</Text>
+                    </TouchableOpacity>
                 </View>
             );
         }
@@ -77,21 +88,22 @@ class hello_react extends Component {
                 <ShopView navigator={navigator} route={route}/>
             );
         }
-        if(route.id === 'viewpager'){
-          return (
-            <ViewPager navigator={navigator} route={route}/>
-          );
+        if (route.id === 'viewpager') {
+            return (
+                <ViewPager navigator={navigator} route={route}/>
+            );
         }
-        if(route.id === 'userinfo'){
-          return (
-            <UserInfoView navigator={navigator} route={route}/>
-          );
+        if (route.id === 'userinfo') {
+            return (
+                <UserInfoView navigator={navigator} route={route}/>
+            );
         }
-        if(route.id === 'news'){
-          return (
-            <NewsView navigator={navigator} route={route}/>
-          );
+        if (route.id === 'news') {
+            return (
+                <NewsView navigator={navigator} route={route}/>
+            );
         }
+
 
     }
 
