@@ -27,14 +27,14 @@ import ShopView from './views/shop/shop.js';
 import ViewPager from './views/viewpager.android.js';
 import UserInfoView from './views/user/userinfo.js';
 import NewsView from './views/news/news.js';
-import  CountModule from './views/CountModule';
+import MyModules from './views/myModules/MyModules';
+
 
 class hello_react extends Component {
     constructor(props) {
         super(props);
         this.state = {};
     }
-
 
     configureScenceAndroid() {
         return Navigator.SceneConfigs.FadeAndroid;
@@ -65,13 +65,9 @@ class hello_react extends Component {
                                       style={ styles.button }>
                         <Text>News</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={()=> {
-                        console.warn("count");
-                        CountModule.count("ray ", CountModule.TEST_COUNT_KEY);
-                        console.warn("CountModule");
-                    }}
+                    <TouchableOpacity onPress={() => _navigator.push({title: 'my', id: 'my'})}
                                       style={ styles.button }>
-                        <Text>modules</Text>
+                        <Text>自定义</Text>
                     </TouchableOpacity>
                 </View>
             );
@@ -101,6 +97,11 @@ class hello_react extends Component {
         if (route.id === 'news') {
             return (
                 <NewsView navigator={navigator} route={route}/>
+            );
+        }
+        if (route.id === 'my') {
+            return (
+                <MyModules navigator={navigator} route={route}/>
             );
         }
 

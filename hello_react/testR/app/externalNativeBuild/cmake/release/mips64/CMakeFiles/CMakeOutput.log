@@ -1,0 +1,195 @@
+The target system is: Android - 21 - mips64
+The host system is: Windows - 6.1.7601 - AMD64
+Determining if the C compiler works passed with the following output:
+Change Dir: F:/Android/react-native/react_native/hello_react/testR/app/externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:\Android\AndroidStudio\sdk\cmake\3.6\bin\ninja.exe" "cmTC_efc0f"
+[1/2] Building C object CMakeFiles/cmTC_efc0f.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_efc0f
+clang.exe: warning: argument unused during compilation: '-Wa,--noexecstack'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: F:/Android/react-native/react_native/hello_react/testR/app/externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:\Android\AndroidStudio\sdk\cmake\3.6\bin\ninja.exe" "cmTC_4dd7f"
+[1/2] Building C object CMakeFiles/cmTC_4dd7f.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_4dd7f
+Android clang version 3.8.256229  (based on LLVM 3.8.256229)
+Target: mips64el-none-linux-android
+Thread model: posix
+InstalledDir: F:\Android\AndroidStudio\sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin
+Found candidate GCC installation: F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android\4.9.x
+Selected GCC installation: F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x
+Candidate multilib: .;
+Selected multilib: .;
+clang.exe: warning: argument unused during compilation: '-Wa,--noexecstack'
+ "F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/bin\\ld" --sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64 -pie --sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64 --eh-frame-hdr -m elf64ltsmip -dynamic-linker /system/bin/linker64 -o cmTC_4dd7f "F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\\crtbegin_dynamic.o" -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib/../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/mips64el-linux-android/../../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_4dd7f.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\\crtend_android.o"
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(mips64el-linux-android-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: F:/Android/react-native/react_native/hello_react/testR/app/externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"F:\Android\AndroidStudio\sdk\cmake\3.6\bin\ninja.exe" "cmTC_4dd7f"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_4dd7f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_4dd7f]
+  ignore line: [Android clang version 3.8.256229  (based on LLVM 3.8.256229)]
+  ignore line: [Target: mips64el-none-linux-android]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: F:\Android\AndroidStudio\sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin]
+  ignore line: [Found candidate GCC installation: F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android\4.9.x]
+  ignore line: [Selected GCC installation: F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: []
+  ignore line: [Selected multilib: .]
+  ignore line: []
+  ignore line: [clang.exe: warning: argument unused during compilation: '-Wa,--noexecstack']
+  link line: [ "F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/bin\\ld" --sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64 -pie --sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64 --eh-frame-hdr -m elf64ltsmip -dynamic-linker /system/bin/linker64 -o cmTC_4dd7f "F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\\crtbegin_dynamic.o" -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib/../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/mips64el-linux-android/../../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_4dd7f.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\\crtend_android.o"]
+    arg [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/bin\ld] ==> ignore
+    arg [--sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64] ==> ignore
+    arg [-pie] ==> ignore
+    arg [--sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf64ltsmip] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_4dd7f] ==> ignore
+    arg [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\crtbegin_dynamic.o] ==> ignore
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x]
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib/../lib64] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib/../lib64]
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64]
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/mips64el-linux-android/../../lib64] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/mips64el-linux-android/../../lib64]
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib]
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib]
+    arg [--build-id] ==> ignore
+    arg [--warn-shared-textrel] ==> ignore
+    arg [--fatal-warnings] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [-znocopyreloc] ==> ignore
+    arg [CMakeFiles/cmTC_4dd7f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\crtend_android.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib/../lib64] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/mips64el-linux-android/lib64]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/mips64el-linux-android/../../lib64] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/mips64el-linux-android/lib]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib]
+  implicit libs: [dl;c;dl]
+  implicit dirs: [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x;F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/mips64el-linux-android/lib64;F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64;F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/mips64el-linux-android/lib;F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: F:/Android/react-native/react_native/hello_react/testR/app/externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:\Android\AndroidStudio\sdk\cmake\3.6\bin\ninja.exe" "cmTC_fc1df"
+[1/2] Building CXX object CMakeFiles/cmTC_fc1df.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_fc1df
+clang++.exe: warning: argument unused during compilation: '-Wa,--noexecstack'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: F:/Android/react-native/react_native/hello_react/testR/app/externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:\Android\AndroidStudio\sdk\cmake\3.6\bin\ninja.exe" "cmTC_4502d"
+[1/2] Building CXX object CMakeFiles/cmTC_4502d.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_4502d
+Android clang version 3.8.256229  (based on LLVM 3.8.256229)
+Target: mips64el-none-linux-android
+Thread model: posix
+InstalledDir: F:\Android\AndroidStudio\sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin
+Found candidate GCC installation: F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android\4.9.x
+Selected GCC installation: F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x
+Candidate multilib: .;
+Selected multilib: .;
+clang++.exe: warning: argument unused during compilation: '-Wa,--noexecstack'
+ "F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/bin\\ld" --sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64 -pie --sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64 --eh-frame-hdr -m elf64ltsmip -dynamic-linker /system/bin/linker64 -o cmTC_4502d "F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\\crtbegin_dynamic.o" -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib/../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/mips64el-linux-android/../../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_4502d.dir/CMakeCXXCompilerABI.cpp.o F:/Android/AndroidStudio/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips64/libgnustl_static.a -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl "F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\\crtend_android.o"
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(mips64el-linux-android-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: F:/Android/react-native/react_native/hello_react/testR/app/externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"F:\Android\AndroidStudio\sdk\cmake\3.6\bin\ninja.exe" "cmTC_4502d"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_4502d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_4502d]
+  ignore line: [Android clang version 3.8.256229  (based on LLVM 3.8.256229)]
+  ignore line: [Target: mips64el-none-linux-android]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: F:\Android\AndroidStudio\sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin]
+  ignore line: [Found candidate GCC installation: F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android\4.9.x]
+  ignore line: [Selected GCC installation: F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: []
+  ignore line: [Selected multilib: .]
+  ignore line: []
+  ignore line: [clang++.exe: warning: argument unused during compilation: '-Wa,--noexecstack']
+  link line: [ "F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/bin\\ld" --sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64 -pie --sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64 --eh-frame-hdr -m elf64ltsmip -dynamic-linker /system/bin/linker64 -o cmTC_4502d "F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\\crtbegin_dynamic.o" -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib/../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/mips64el-linux-android/../../lib64 -LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib -LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_4502d.dir/CMakeCXXCompilerABI.cpp.o F:/Android/AndroidStudio/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips64/libgnustl_static.a -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl "F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\\crtend_android.o"]
+    arg [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/bin\ld] ==> ignore
+    arg [--sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64] ==> ignore
+    arg [-pie] ==> ignore
+    arg [--sysroot=F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf64ltsmip] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_4502d] ==> ignore
+    arg [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\crtbegin_dynamic.o] ==> ignore
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x]
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib/../lib64] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib/../lib64]
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64]
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/mips64el-linux-android/../../lib64] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/mips64el-linux-android/../../lib64]
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib]
+    arg [-LF:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib] ==> dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib]
+    arg [--build-id] ==> ignore
+    arg [--warn-shared-textrel] ==> ignore
+    arg [--fatal-warnings] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [-znocopyreloc] ==> ignore
+    arg [CMakeFiles/cmTC_4502d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [F:/Android/AndroidStudio/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips64/libgnustl_static.a] ==> lib [F:/Android/AndroidStudio/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips64/libgnustl_static.a]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64\crtend_android.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc]
+  remove lib [gcc]
+  remove lib [gcc]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib/../lib64] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/mips64el-linux-android/lib64]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/../lib64] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib/mips64el-linux-android/../../lib64] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x/../../../../mips64el-linux-android/lib] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/mips64el-linux-android/lib]
+  collapse library dir [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib] ==> [F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib]
+  implicit libs: [F:/Android/AndroidStudio/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips64/libgnustl_static.a;stdc++;m;dl;c;dl]
+  implicit dirs: [F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mips64el-linux-android/4.9.x;F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/mips64el-linux-android/lib64;F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64;F:/Android/AndroidStudio/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/mips64el-linux-android/lib;F:/Android/AndroidStudio/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib]
+  implicit fwks: []
+
+
