@@ -84,6 +84,7 @@ export default class NewsView extends BaseView {
                         {pages}
                     </ViewPagerAndroid>
                     <ListView
+                        style={{backgroundColor: 'white'}}
                         dataSource={this.state.dataSource}
                         renderRow={(rowData) =>
                             <TouchableOpacity>

@@ -65,8 +65,8 @@ export default class ShopView extends BaseView {
             <DrawerLayoutAndroid
                 drawerWidth={300}
                 drawerPosition={DrawerLayoutAndroid.positions.Left}
-                ref={(drawer) => {
-                    drawer = drawer;
+                ref={(drawer1) => {
+                    drawer = drawer1;
                 }}
                 renderNavigationView={() => navigationView}
             >
