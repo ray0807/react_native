@@ -11,6 +11,22 @@
 
  ## 2016-08-12
   * 1.Android native 与React native 混合开发
+    本狗比较幸运，老大让我全全负责一个小项目，然后只提了一个要求，App中嵌入react native模块，这正合我意啊，已经过了3天了，写下混合开发的注意事项吧。
+  
+  * 2.native App中集成react native
+    先来张飞机票（ http://facebook.github.io/react-native/docs/integration-with-existing-apps.html ），其实这里就有个坑，不信你试试，集成很多次，从native 启动react native 界面都是小红屏，本狗真的是试了近一个小时，依然没有找到原因，最后无奈init一个新项目，把配置都看了一遍，不知怎么的就好了，这里我说一些要注意的点：
+    （1）package.json  这个文件使用官网上的就可以了，这个文件相当于android里面的app/build.gradle ，下载安装包之类的功用
+    （2）项目/build.gradle ，这个文件中要设置maven路径，这个指向的是本地路径，千万注意路径的正确性（../node_...）,本狗吃过亏
+    （3）npm install ,这个命令类似android studio中下载依赖包，注意：先要下载依赖（npm install），因为（2）中要引用
+   
+   * 3.小问题
+     我嵌入的这个小模块有个返回按钮（不是物理按键），按这个imageview需要返回native界面，我一开始使用navigation，发现并没有什么卵用，后来没法，只能通过js与native通信，在native中finish()掉。
+   
+   * 4.开发效率
+     这个是我最想吐槽，本狗没做过前段，所以不怎么熟悉js，css，HTML等，做一个不是很难得界面花了我一天时间，就是调调这个居中，那个靠右，绑定事件等。还是自己不够熟悉，感觉开发太慢了，有点像回到2年前毕业的时候。
+   
+   * 5.性能 
+     本狗开发的界面不算难，就是几个tab+几个listview（类似native 中tabview+viewpage），首次进入react native界面估计得白屏1~2秒（个人觉得还是可以接受的），这个是由于在下载解析js，所以会消耗点时间，首次左右滑动，也是有点顿卡，原理类似，但是当已经加载后，再次操作，跟原生App并无两样。
    
 
  ## 2016-07-30
